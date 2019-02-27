@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
+</head>
+<body>
+	<!-- USANDO CONDICIONAL -->
+<!-- 	<div id="placar">
+		<div>{{ n }}</div>
+		<span v-if="n > 5">Parabéns, vc passou de 5 pontos!</span>
+	</div> -->
+
+	<!-- USANDO LOOP -->
+	<div id="lista">
+		<ul>
+			<li v-for="info in nomes">
+				<h4>{{info.nome+" "+info.sobrenome+" "+" possui "+info.idade+" anos de idade."}}</h4>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
